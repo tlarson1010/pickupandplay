@@ -1,5 +1,33 @@
-img{
+img {
     width: 200px;
     height: 200px;
     /* object-fit: scale-down; */
+}
+
+.carousel-control-next,
+.carousel-control-prev {
+    filter: invert(100%);
+}
+
+.carousel-control-next {
+    right: -10px;
+}
+
+.carousel-control-prev {
+    left: -70px;
+}
+
+
+.carousel-caption {
+    color: black;
+    bottom: -50px;
+}
+
+.carousel-indicators {
+    filter: invert(100%);
+    bottom:-50px;
+}
+
+.card {
+    padding: 5px;
 }
