@@ -53,8 +53,71 @@
         </div>
     </nav>
 
+    <!-- Scoreboard Modal -->
+    <div id="scoreboardModal" class="modal fade" role="dialog">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3 class="modal-title">Set up your Scoreboard</h3>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <div class="container-fluid">
+                        <form>
+                            <div class="row form-group">
+                                <label class="col-sm-6 col-form-label">Number of Players</label>
+                                <div class="col-sm">
+                                    <select class="form-control" name="numPlayers" id="numPlayers">
+                                        <option>Select</option>
+                                        <option value="4">2-on-2</option>
+                                        <option value="6">3-on-3</option>
+                                        <option value="8">4-on-4</option>
+                                        <option value="10">5-on-5</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row form-group">
+                                <label clas="col-sm-6 col-form-label">Game Type</label>
+                                <div class="col-2 btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-success" id="timeLabel">
+                                        <input type="radio" name="gameType" id="timeButton" value="timed">Timed
+                                    </label>
+                                    <label class="btn btn-primary text-nowrap" id="scoreLabel">
+                                        <input type="radio" name="gameType" id="scoreButton" value="score">Target Score
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row form-group d-none" id="totalTimeDiv">
+                                <select class="form-control" name="totalTime" id="totalTime">
+                                    <option value="none">Select how long your game will be.</option>
+                                    <option value="5">5 minutes</option>
+                                    <option value="10">10 minutes</option>
+                                    <option value="20">20 minutes</option>
+                                </select>
+                            </div>
+                            <div class="row form-group d-none" id="targetScoreDiv">
+                                <select class="form-control" name="targetScore" id="targetScore">
+                                    <option value="none">Select the target score for your game.</option>
+                                    <option value="5">First to 5 points</option>
+                                    <option value="10">First to 10 points</option>
+                                    <option value="21">First to 21 points</option>
+                                </select>
+                            </div>
+                            <div class="row form-group">
+                                <div class="col">
+                                    <button class="btn btn-secondary" type="cancel" data-dismiss="modal">Cancel</button>
+                                    <a role="button" href="scoreboard.html" class="btn btn-primary" type="submit" id="scoreboardSubmit">Submit</a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Content Container -->
-    <div class="container-fluid">
+    <div class="container-fluid" id="homepageContainer">
         <div class="row row-content">
             <div class="col-12">
                 <img src="img/players.jpeg" id="homeImage"/>
@@ -98,8 +161,8 @@
                                             <img src="" class="card-img-top" alt="">
                                             <div class="card-body">
                                                 <h5 class="card-title">Scoreboard</h5>
-                                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                                <a href="#" class="btn btn-primary">Go somewhere</a>
+                                                <p class="card-text">Easy way to keep track of the score, to make games go faster, and no one will fight over the score.</p>
+                                                <button role="button" class="btn btn-primary" id="scoreboardButton">Try it out!</button>
                                             </div>
                                         </div>
                                     </div>
@@ -169,6 +232,7 @@
     <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
+    <script src="js/scripts.js"></script>
 
 </body>
 
