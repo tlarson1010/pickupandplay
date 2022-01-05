@@ -6,7 +6,6 @@ $(function() {
             $("#scoreboardModal").modal("toggle");
         });
         console.log(localStorage.getItem("totalTime"));
-        
         // $("#loginButton").click(function(){
         //     $("#loginModal").modal("toggle");
         // });
@@ -17,6 +16,8 @@ $(function() {
             console.log("timed game");
             $("#totalTimeDiv").removeClass("d-none");
             $("#targetScoreDiv").addClass("d-none");
+            localStorage.setItem("timed", "true");
+            localStorage.setItem("score", "false");
         }
     });
 
@@ -25,6 +26,8 @@ $(function() {
             console.log("score game");
             $("#totalTimeDiv").addClass("d-none");
             $("#targetScoreDiv").removeClass("d-none");
+            localStorage.setItem("score", "true");
+            localStorage.setItem("timed", "false");
         }
     });
 
@@ -41,7 +44,3 @@ $(function() {
     });
 
 });
-
-function showInfo() {
-    
-}

@@ -53,9 +53,109 @@
         </div>
     </nav>
 
+    <p id="listPlayerNum"></p>
+    <p id="listTime"></p>
+    <p id="listScore"></p>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1 id ="score" style="text-align: center;">0 - 0</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <table class="table" id="team1">
+                <thead>
+                    <tr>Team 1</tr>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Points</th>
+                        <th scope="col">Rebounds</th>
+                        <th scope="col">Assists</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="team1Player1">
+                        <th scope="row">Mark Otto</th>
+                        <td id="team1Player1Points"><button class="btn btn-secondary btn-sm">-</button>0<button class="btn btn-primary btn-sm" id="addP1Points">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                    </tr>
+                    <tr id="team1Player2">
+                        <th scope="row">Nikola Jokic</th>
+                        <td id="team1Player2Points"><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                    </tr>
+                    <tr class="d-none" id="team1Player3">
+                        <th scope="row">Jamal Murray</th>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                    </tr>
+                    <tr class="d-none" id="team1Player4">
+                        <th scope="row">Michael Porter Jr.</th>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                    </tr>
+                    <tr class="d-none" id="team1Player5">
+                        <th scope="row">Aaron Gordon</th>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="col-6">
+            <table class="table" id="team2">
+                <thead>
+                    <tr>Team 2</tr>
+                    <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Points</th>
+                        <th scope="col">Rebounds</th>
+                        <th scope="col">Assists</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr id="team2Player1">
+                        <th scope="row">Jacob Thornton</th>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                    </tr>
+                    <tr id="team2Player2">
+                        <th scope="row">Stephen Curry</th>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                    </tr>
+                    <tr class="d-none" id="team2Player3">
+                        <th scope="row">Draymond Green</th>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                    </tr>
+                    <tr class="d-none" id="team2Player4">
+                        <th scope="row">Klay Thompson</th>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                    </tr>
+                    <tr class="d-none" id="team2Player5">
+                        <th scope="row">Andrew Wiggins</th>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                        <td><button class="btn">-</button>0<button class="btn">+</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
     
-
-    <!-- Accordion for small screens -->
     
 
     <footer>
@@ -67,6 +167,7 @@
     <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 
     <script src="js/scripts.js"></script>
+    <script src="js/scoreboardScript.js"></script>
 
 
 </body>
